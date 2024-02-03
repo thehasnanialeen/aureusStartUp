@@ -12,6 +12,12 @@ const StoryPage = () =>{
         <h1 className="slogan">Bridging the gap to beat Bacteria</h1>
         <div className="signature"> -Joshua Adams</div>
     </div>
+
+    <div className="story">
+        <h1>Testomonial</h1>
+        <p>"The website provides a wealth of data to further probe the disconnect between the results we see in lab and what should be the correct corresponding treatment but still resulting in therapeutic failures in patients."</p>
+        <div className="signature"> -Academic researcher</div>
+    </div>
 </div>
     );
 

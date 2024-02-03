@@ -40,6 +40,7 @@
 .dashboard-container1 h1{
     font-size: 4em;
     text-decoration: underline;
+    margin-top: 15px;
 }
 
 button {
