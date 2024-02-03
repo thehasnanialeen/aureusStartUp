@@ -41,3 +41,10 @@
     transform: rotate(-2deg); 
     display: inline-block; 
 }
+.slogan{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 4em; 
+    text-align: center;
+    margin-top: 20px; 
+    opacity: 0.7; 
+}

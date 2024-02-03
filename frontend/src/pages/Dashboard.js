@@ -28,7 +28,7 @@ const initialCases = [
           <div key={caseItem.id} className="dashboard-item">
             <h3>Patient ID:{caseItem.id}</h3>
             <h4>Disease: {caseItem.disease}</h4>
-            <h4>Site: {caseItem.site}</h4>
+            <h4>Site of Infection: {caseItem.site}</h4>
             {/* Implement inputs or display for treatment, dose, outcome as needed */}
             <button onClick={() => handleComplete(caseItem)}>Complete</button>
           </div>
