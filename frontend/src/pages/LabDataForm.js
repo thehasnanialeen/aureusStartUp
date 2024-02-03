@@ -103,7 +103,7 @@ const LabDataForm = () => {
             <h4>Disease: {caseItem.disease}</h4>
             <h4>Site of Infection: {caseItem.site}</h4>
             <h4>Treatment: {caseItem.treatment}</h4>
-            <h4>Dose: {caseItem.dose}</h4>
+            <h4>Dose: {caseItem.dose} µg/mL</h4>
             <h4 style={{color: caseItem.outcome == "Success" ? "Green" : "Red"}}>Outcome: {caseItem.outcome}</h4>
           </div>
         ))}
