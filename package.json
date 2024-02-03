@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "client": "cd .. && npm run build && cd backend && npm run nodemonStart",
-    "build": "cd .. && npm install && npm run build",
+    "client": "cd frontend && npm run build && cd .. && npm run nodemonStart",
+    "build": "cd frontend && npm install && npm run build",
     "nodemonStart": "nodemon server.js",
     "dev": "concurrently --kill-others \"npm run nodemonStart\" \"npm run client\"",
     "prod": "npm install && npm run build"

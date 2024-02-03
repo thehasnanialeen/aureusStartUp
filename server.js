@@ -13,7 +13,7 @@ const port = process.env.PORT || 5001;
 
 const app = express();
 
-const publicPath = path.join(__dirname);
+const publicPath = path.join(__dirname, 'frontend', 'build');
 
 app.use(express.static(publicPath));
 app.use(express.json());
