@@ -54,11 +54,11 @@ app.use(
 // });
 
 mongoose.connect(
-    process.env.DB_URL + "retryWrites=true&w=majority", 
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    process.env.DB_URL + "retryWrites=true&w=majority" 
+    // {
+    //   strict: true,
+    //  deprecationErrors: true,
+    // }
   );
 
 const db = mongoose.connection;
