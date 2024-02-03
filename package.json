@@ -1,0 +1,37 @@
+{
+  "name": "startup2024",
+  "version": "1.0.0",
+  "description": "This a web application called startup2024",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "cd .. && npm run build && cd backend && npm run nodemonStart",
+    "build": "cd .. && npm install && npm run build",
+    "nodemonStart": "nodemon server.js",
+    "dev": "concurrently --kill-others \"npm run nodemonStart\" \"npm run client\"",
+    "prod": "npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "bootstrap": "^5.3.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^5.6.0",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.4",
+    "passport": "^0.6.0",
+    "passport-oauth2": "^1.7.0",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0",
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,77 @@
+.container{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: #62bdd6;
+    color:black;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.quote-form {
+    width: 100%;
+    
+}
+
+.quote-form h2,
+.quote-form p {
+    text-align: center;
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border:black;
+    background-color: white;
+}
+
+/* .quote-form input:focus,
+.quote-form select:focus {
+    border: 1px solid  #4B86B4;
+    background-color: #294D69;
+} */
+
+.button-container {
+    display: flex; /* Make the form a flex container */
+    flex-direction: column; /* Ensure child elements stack vertically */
+    align-items: center; /* Center-align all child elements horizontally */
+    text-align: center; /* Center-align text */
+}
+
+.quote-form button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.salesPitch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Set the container height to the viewport height for full vertical centering */
+}
+.salesPitch p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.salesPitch h1{
+    font-style:bold;
+    line-height: 1.5;
+}

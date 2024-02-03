@@ -1,0 +1,85 @@
+/* Container for pricing tiers */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    line-height: 1.5;
+  }
+  
+  /* Base styling for each tier */
+  .pricing-tier {
+    flex: 1; /* Each tier takes up a third of the container width */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Highlighting the recommended tier */
+  .recommended {
+    border: 2px solid blue;
+    position: relative;
+  }
+  
+  /* Label for the recommended tier */
+  .recommended::after {
+    content: "Most Popular";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  /* Styling adjustments for text and buttons inside tiers */
+  .pricing-tier h2, .pricing-tier p {
+    margin: 10px 0;
+  }
+  
+  .pricing-tier button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .pricing-tier .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .pricing-tier .licenses, .pricing-tier .support {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .recommendation-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  .pricing-header h1 {
+    text-align: center;
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 0.5em;
+  }
+  
+  .pricing-header p {
+    text-align: center;
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-bottom: 2em; /* Provides spacing between the subheading and the pricing tiers */
+  }
+  

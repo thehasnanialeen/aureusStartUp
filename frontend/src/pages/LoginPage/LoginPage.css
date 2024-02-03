@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+  }
+.user {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../../assets/microbiome.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  /* Back banner */
+  .back-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: rgba(34, 34, 34, 0.85);
+    border-radius: 3px;
+    width: 80%;   
+    height: 50%;    
+    position: absolute;
+
+    color: #fff;
+    font-weight: 300;
+  }
+.half-banner{
+    flex: 1;
+    padding: 75px 45px;
+}
+.right-banner{
+    margin-left: 15%;
+}
+.spacer{
+    display: none;
+}
+.bounceMiddle .spacer{
+    display:block;
+}
+
+.banner-title{
+    font-size: 25px;
+    line-height: 30px;
+}
+.banner-button{
+    background-color: transparent;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 0.2rem;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.banner-button:hover{
+    color: rgba(34, 34, 34, 0.85);
+    background-color: #ccc;
+}
+
+/* Front form Buttons*/
+/* Styles for the Google Sign-In button */
+.google-button {
+  margin-top:4%;
+  background-color: #4285f4 !important;
+  color: white !important;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width:100%;
+  text-align:center;
+}
+
+.google-button:hover {
+  background-color: #357ae8; 
+}
+
+.google-button:active {
+  background-color: #3367d6; 
+}
+
+.forgot-button {
+    background-color: transparent;
+    border:transparent;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    color: #ccc;
+    text-decoration: underline;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+  }
+.forgot-button:hover {
+    color: #b3b3b3;
+  }
+.form-button{
+    background-color: #ff5449;
+    border:#ff5449;
+    border-radius: 3px;
+    padding: 10px 35px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+.form-button:hover{
+    background-color: #e63e30;
+}
+.forms_buttons {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/* Front form */
+.forms_title{
+    margin-bottom: 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #ff5449;
+    letter-spacing: 0.1rem;
+}
+.user-form{
+    z-index:10;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 45%;
+    min-height: 420px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    -webkit-transform: translate3d(100%, -43%, 0);
+            transform: translate3d(100%, -43%, 0);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    display: grid;
+    align-content: center;
+}
+.form_fields {
+    border: 1px solid #000000c9; 
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+.form-field{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 20px 6px 6px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ccc;
+    letter-spacing: 0.1rem;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+}
+.login-form, .signup-form, .recovery-form{
+    width:80%;
+    margin: auto;
+    
+}
+input {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 0.85rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    color: #ccc;
+    
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 20px 6px 6px;
+    font-size: 1rem;
+    -webkit-transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
+  }
+ input:focus {
+    border-color: gray;
+  }
+  input::placeholder {
+    color: #ccc;
+}
+/* Splitting forms */
+/* Initially hide all forms */
+.user-form > form {
+  display: none;
+}
+
+/* When bounce class is active, hide the other forms */
+/* right = login, left = signup, middle = recovery */
+.bounceLeft .login-form,
+.bounceLeft .recovery-form,
+.bounceMiddle .signup-form, 
+.bounceMiddle .login-form,
+.bounceRight .signup-form ,
+.bounceRight .recovery-form
+ {
+  display: none;
+}
+
+/* Rules to show a specific form for each class */
+.bounceLeft .signup-form,
+.bounceMiddle .recovery-form,
+.bounceRight .login-form {
+  display: block;
+}
+/* Animations */
+.user-form.moveToLeft {
+    animation: moveToLeft 1s forwards;
+  }
+  
+  .user-form.moveToRight {
+    animation: moveToRight 1s forwards;
+  }
+  
+  .user-form.moveToCenter {
+    animation: moveToCenter 1s forwards;
+  }
+  
+  .user-form.moveToCenterFromRight {
+    animation: moveToCenterFromRight 1s forwards;
+  }
+  .user-form.moveFromCentertoLeft {
+    animation: moveFromCentertoLeft 1s forwards;
+  }
+  .user-form.moveFromCentertoRight {
+    animation: moveFromCentertoRight 1s forwards;
+  }
+  :root {
+    /* (80% - 45%) / 2 + 10% = 27.5% */
+    --left: 27.5%; 
+    --right: 95%;
+    --middle: 60%;
+  }
+  @keyframes moveToLeft {
+    0% {
+        -webkit-transform: translate3d(var(--right) , -43%, 0);
+        transform: translate3d(var(--right), -43%, 0);
+      }
+      50% {
+        -webkit-transform: translate3d(calc(--left - 30px), -43%, 0);
+        transform: translate3d(calc(var(--left) - 30px), -43%, 0);
+    }
+      100% {
+        -webkit-transform: translate3d(var(--left) , -43%, 0);
+        transform: translate3d(var(--left) , -43%, 0);
+      }
+    }
+  
+  @keyframes moveToRight {
+    0% {
+        -webkit-transform: translate3d(var(--left) , -43%, 0);
+        transform: translate3d(var(--left) , -43%, 0);
+      }
+      50% {
+        -webkit-transform: translate3d(calc(var(--right) + 30px), -43%, 0);
+        transform: translate3d(calc(var(--right) + 30px), -43%, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(var(--right), -43%, 0);
+        transform: translate3d(var(--right), -43%, 0);
+      }
+    }
+  
+  @keyframes moveToCenter {
+    0% {
+        -webkit-transform: translate3d(var(--left) , -43%, 0);
+        transform: translate3d(var(--left) , -43%, 0);
+      }
+    50% {
+      -webkit-transform: translate3d(calc(var(--middle) + 30px), -43%, 0);
+      transform: translate3d(calc(var(--middle) + 30px), -43%, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(var(--middle), -43%, 0);
+      transform: translate3d(var(--middle), -43%, 0);
+    }
+  }
+  
+  @keyframes moveToCenterFromRight {
+    0% {
+        -webkit-transform: translate3d(var(--right), -43%, 0);
+        transform: translate3d(var(--right), -43%, 0);
+      }
+    50% {
+      -webkit-transform: translate3d(calc(var(--middle) - 30px), -43%, 0);
+      transform: translate3d(calc(var(--middle) - 30px), -43%, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(var(--middle), -43%, 0);
+      transform: translate3d(var(--middle), -43%, 0);
+    }
+  }
+  
+  @keyframes moveFromCentertoRight {
+    0% {
+
+        -webkit-transform: translate3d(var(--middle), -43%, 0);
+        transform: translate3d(var(--middle), -43%, 0);
+      }
+    50% {
+      -webkit-transform: translate3d(calc(var(--right) + 30px), -43%, 0);
+      transform: translate3d(calc(var(--right) + 30px), -43%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(var(--right), -43%, 0);
+        transform: translate3d(var(--right), -43%, 0);
+    }
+  }
+
+  @keyframes moveFromCentertoLeft {
+    0% {
+
+        -webkit-transform: translate3d(var(--middle), -43%, 0);
+        transform: translate3d(var(--middle), -43%, 0);
+      }
+    50% {
+      -webkit-transform: translate3d(calc(var(--left) - 30px), -43%, 0);
+      transform: translate3d(calc(var(--left) - 30px), -43%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(var(--left), -43%, 0);
+        transform: translate3d(var(--left), -43%, 0);
+    }
+  }
+ 

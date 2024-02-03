@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.StoryPage {
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background: #f0f0f0; 
+    color: white; 
+    font-family: 'Arial', sans-serif; 
+    background-image: url('../../assets/genome.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.story {
+    width: 75%;
+    background:   #2b799a;
+    padding: 30px; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: justify; 
+    line-height: 1.6;
+}
+
+.story h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.signature {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 2em; 
+    text-align: right; 
+    margin-top: 50px; 
+    opacity: 0.7; 
+    transform: rotate(-2deg); 
+    display: inline-block; 
+}
