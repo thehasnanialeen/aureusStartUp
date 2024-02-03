@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "client": "cd frontend && npm run build && cd .. && npm run nodemonStart",
-    "build": "cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install --force && npm run build",
     "nodemonStart": "nodemon server.js",
     "dev": "concurrently --kill-others \"npm run nodemonStart\" \"npm run client\"",
     "prod": "npm install && npm run build"
