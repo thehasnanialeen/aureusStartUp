@@ -82,4 +82,10 @@
     font-size: 1.2em; /* Adjust size as needed */
     margin-bottom: 2em; /* Provides spacing between the subheading and the pricing tiers */
   }
+  .sale-price {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
   

@@ -3,11 +3,12 @@ import { useLocation } from 'react-router-dom';
 import SimpleGooglePayButton from '../components/SimpleGooglePayButton';
 import './PaymentPage.css';
 
+
 const PaymentPage = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const totalAmount = searchParams.get('amount');
-  const plan = totalAmount === '959' ? 'Professional Plan' : 'Basic Plan';
+  const plan = totalAmount === '3000' ? 'Professional Plan' : 'Basic Plan';
 
   // Sample order details
   const order = {
@@ -21,7 +22,7 @@ const PaymentPage = () => {
       <div className="OrderDetails">
         <h2>Order Summary</h2>
         <p><strong>Order ID:</strong> {order.orderId}</p>
-        <p><strong>Total Amount:</strong> {order.totalAmount}</p>
+        <p><strong>Total Amount:</strong> {order.totalAmount} per year</p>
         <h3>Ordered Items:</h3>
         <p>
           {order.items.map((item, index) => (

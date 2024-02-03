@@ -1,17 +1,20 @@
 import React from 'react';
-import profile1 from '../../assets/profile_pic.jpg';
+import aleen from '../../assets/aleen.jpg';
+import joshua from '../../assets/joshua.jpg';
+import isabella from '../../assets/isabella.jpg';
+import chris from '../../assets/chris.jpg';
+import wyatt from '../../assets/wyatt.jpg';
+import emmanuel from '../../assets/emmanuel.jpg';
 import './TeamPage.css';
 
 const TeamPage = () => {
     const employees = [
-        { id: 1, name: 'Wyatt Drew - Founder & CEO', image: profile1 },
-        { id: 2, name: 'Wyatt Drew - Sales Director', image: profile1 },
-        { id: 3, name: 'Wyatt Drew - Event Director', image: profile1 },
-        { id: 4, name: 'Wyatt Drew - Product Designer', image: profile1 },
-        { id: 5, name: 'Wyatt Drew - Research & Development', image: profile1 },
-        { id: 6, name: 'Wyatt Drew - Event Specialist', image: profile1 },
-        { id: 7, name: 'Wyatt Drew', image: profile1 },
-        { id: 8, name: 'Wyatt Drew', image: profile1 },
+        { id: 1, name: 'Joshua - Team Lead', image: joshua },
+        { id: 2, name: 'Chris - Market Research', image: chris },
+        { id: 3, name: 'Isabella - Market Research', image: isabella },
+        { id: 4, name: 'Emmanuel - Product Designer', image: emmanuel },
+        { id: 5, name: 'Wyatt - Tech Lead', image: wyatt },
+        { id: 6, name: 'Aleen - Tech Lead', image: aleen },
     ];
 
     return (

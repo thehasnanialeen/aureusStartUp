@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 
 const PricingComponent = () => {
   // Define pricing details
-  const basicPlanPrice = 549;
-  const professionalPlanPrice = 959;
+  const basicPlanPrice = 4000;
+  const professionalPlanPrice = 6000;
+  // Calculate sale prices
+  const basicPlanSalePrice = basicPlanPrice / 2;
+  const professionalPlanSalePrice = professionalPlanPrice / 2;
 
   return (
     <div>
@@ -17,10 +20,11 @@ const PricingComponent = () => {
         {/* Basic Plan */}
         <div className="pricing-tier">
           <h2>Basic Plan</h2>
-          <p className="price">$549 USD per month</p>
-          <p className="licenses">1 license</p>
+          <p className="price"><s>$4000 CAD per month</s></p>
+          <p className="sale-price">$ {basicPlanSalePrice} CAD per month</p> {/* Sale price */}
+          <p className="licenses">10 licenses</p>
           <p className="support">Email support</p>
-          <Link to={`/PaymentPage?amount=${basicPlanPrice}`}>
+          <Link to={`/PaymentPage?amount=${basicPlanSalePrice}`}>
             <button>Choose Plan</button>
           </Link>
         </div>
@@ -28,13 +32,14 @@ const PricingComponent = () => {
         {/* Professional Plan - Recommended */}
         <div className="pricing-tier recommended">
           <h2>Professional Plan</h2>
-          <p className="price">$959 USD per month</p>
-          <p className="licenses">Up to 5 licenses</p>
+          <p className="price"><s>$6000 CAD per month</s></p>
+          
+          <p className="sale-price">$ {professionalPlanSalePrice} CAD per month</p> {/* Sale price */}
+          <p className="licenses">Up to 25 licenses</p>
           <p className="support">Priority email and phone support</p>
-          <Link to={`/PaymentPage?amount=${professionalPlanPrice}`}>
+          <Link to={`/PaymentPage?amount=${professionalPlanSalePrice}`}>
             <button>Choose Plan</button>
           </Link>
-          <div className="recommendation-badge">Most Popular</div>
         </div>
 
         {/* Enterprise Plan */}

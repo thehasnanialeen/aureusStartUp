@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../assets/aureus_logo.png';
+import logo from '../assets/aureus.png';
 import { useUser } from '../contexts/UserContext'; 
 
 const Dropdown = ({ children }) => {

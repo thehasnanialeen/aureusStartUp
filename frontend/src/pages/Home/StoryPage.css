@@ -26,10 +26,15 @@
 .story h1 {
     text-align: center; 
     margin-bottom: 20px; 
+    font-size: 4em;
+}
+
+.story p{
+    font-size: medium;
 }
 .signature {
     font-family: 'Dancing Script', cursive; 
-    font-size: 2em; 
+    font-size: 4em; 
     text-align: right; 
     margin-top: 50px; 
     opacity: 0.7; 

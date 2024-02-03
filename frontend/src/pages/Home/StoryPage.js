@@ -8,8 +8,8 @@ const StoryPage = () =>{
 <div className="StoryPage">
     <div className="story">
         <h1>About Us: Our Story</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        <div className = "signature"> -Wyatt Drew</div>
+        <p>"During my graduate studies, I worked very closely with health care practitioners and world leading researchers in tackling antimicrobial resistance. Microbial resistance to antibiotics, including last-resort ones, is a rising concern. As a result, there are limited options to treat patients with infections, and in some cases, there are no viable options leading to poor prognosis including patients’ death. The antibiotic therapeutic regimen, especially for hospitalized patients, is decided based on a standardized antibiotic susceptibility (phenotypic) test. The therapeutic outcomes often do not correlate with the phenotypic results from these tests, occasionally leading to therapeutic failure. During my work it became very apparent that there was a need for a database that would provide an array of complementary information to optimize the decisions related to antibiotic regimes."</p>
+        <div className = "signature"> -Joshua Adams</div>
     </div>
 </div>
     );
